@@ -1,0 +1,116 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.boot-screen {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#boot-progress-bar {
+    background-color: #232323;
+    border:  1px solid #363636;
+    border-radius: 5px;
+    width: 300px;
+    height: 7px;
+    margin-top: 80px;
+}
+
+#boot-progress-bar-color {
+    width: 0%;
+    height: 100%;
+    background-color: #C4C4C3;
+    border-radius: 50px 0px 0px 50px;
+}
+
+
+.mac-home-view {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('mac-os-background-image2.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center
+}
+
+.mac-bottom-bar {
+    width: auto;
+    max-width: 90%;
+    height: 86px;
+    margin-bottom: 8px;
+    padding-top: 6px;
+    background-color: rgba(204, 235, 239, 0.281);
+    backdrop-filter: blur(15px);
+    border-radius: 27px;
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
+    /* border: 2px solid rgba(255, 255, 255, 0.322);*/
+    align-items: flex-start;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mac-bottom-bar-icon-div {
+    display: flex;
+    flex-direction: row;
+}
+
+#mac-bottom-bar-circle {
+    width: 6px;
+    height: 6px;
+    background-color: #00083B;
+    border-radius: 100px;
+    position: relative;
+    left: 260px;
+    /* left: 34px; */
+    bottom: 2px;
+}
+
+.mac-top-bar {
+    width: 100%;
+    height: 32px;
+    background-color: #13558497;
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mac-top-bar-left {
+    display: flex;
+    align-items: center;
+}
+
+.mac-top-bar-right {
+    display: flex;
+    align-items: center
+}
+
+.mac-top-bar-right > img {
+    margin-right: 15px
+}
+
+.mac-top-bar-apple-icon {
+    margin-left: 40px;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.443));
+}
+
+.mac-top-bar-menu {
+    color: #fff;
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+#mac-top-bar-menu-time {
+    margin-right: 10px!important;
+}
