@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
 </head>
 
 <body>
@@ -37,7 +38,7 @@
         </div>
         <div class="mac-bottom-bar">
             <div class="mac-bottom-bar-icon-div">
-                <img onclick="icon_event(1)" src="asset/icon/macOS_Big_Sur.png" width="75" height="75">
+                <img onclick="icon_event(1),appFullScreen()" src="asset/icon/macOS_Big_Sur.png" width="75" height="75">
                 <img onclick="icon_event(2)" src="asset/icon/safari.png" width="75" height="75">
                 <img onclick="icon_event(3)" src="asset/icon/message.png" width="75" height="75">
                 <img onclick="icon_event(4)" src="asset/icon/mail.png" width="75" height="75">
@@ -59,6 +60,14 @@
     <script type="text/javascript" src="bootd.js"></script>
     <script type="text/javascript" src="time.js"></script>
     <script type="text/javascript" src="bottombar.js"></script>
+    <script>
+        function appFullScreen() {
+            const documentElement = document.documentElement;
+
+출처: https://ordinary-code.tistory.com/79 [김평범's OrdinaryCode]
+            documentElement.requestFullscreen();
+        }
+    </script>
 </body>
 
 </html>

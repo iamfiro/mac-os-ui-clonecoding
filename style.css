@@ -65,6 +65,10 @@ body {
     flex-direction: row;
 }
 
+img:not(.mac-bottom-bar-icon-div > img) {
+    pointer-events : none;
+}
+
 #mac-bottom-bar-circle {
     width: 6px;
     height: 6px;
