@@ -1,4 +1,5 @@
 var progressPercent = 0;
+document.body.classList.add("hideCursor");
 function change() {
             progressPercent = progressPercent +1;
             document.getElementById('boot-progress-bar-color').style.width = progressPercent + "%";
@@ -7,7 +8,8 @@ function change() {
         
                 setTimeout(function() {
                     document.getElementById('boot-screen').style.display = "none";
-                    document.getElementById('mac-home-view').style.display = "flex"
+                    document.getElementById('mac-home-view').style.display = "flex";
+                    document.body.classList.remove("hideCursor");
                 }, 3000);
         
                 clearInterval(progressinterval);

@@ -11,18 +11,20 @@
 </head>
 
 <body>
-    <div class="boot-screen" id="boot-screen" style="display: none">
-        <img id="boot-apple-icon" style="visibility: hidden" src="boot-icon.png" width="81.4" height="100">
+    <div class="boot-screen" id="boot-screen">
+        <img id="boot-apple-icon" src="asset/icon/boot-icon.png" width="81.4" height="100">
         <div id="boot-progress-bar" style="visibility: hidden">
             <div id="boot-progress-bar-color"></div>
         </div>
     </div>
-    <div id="mac-home-view" class="mac-home-view">
+    <div id="mac-home-view" class="mac-home-view" style="display: none">
         <div class="mac-top-bar">
 
             <div class="mac-top-bar-left">
                 <img class="mac-top-bar-apple-icon" src="asset/icon/boot-icon.png" width="18" height="20">
-                <span style="font-weight: 900;margin-left: 30px;color: #fff;text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.633);margin-right: 30px;font-size: 18px;" id="title">Finder</span>
+                <span
+                    style="font-weight: 900;margin-left: 30px;color: #fff;text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.633);margin-right: 30px;font-size: 18px;"
+                    id="title">Finder</span>
                 <span class="mac-top-bar-menu">File</span>
                 <span class="mac-top-bar-menu">Edit</span>
                 <span class="mac-top-bar-menu">View</span>
@@ -31,11 +33,13 @@
                 <span class="mac-top-bar-menu">Help</span>
             </div>
             <div class="mac-top-bar-right">
-                <img src="asset/icon/siri.png" width="24" height="24">
-                <span id="mac-top-bar-menu-time" class="mac-top-bar-menu">Help</span>
+                <img src="asset/mac setting/control-center.png" width="20" height="20" id="control-icon"
+                onclick="toggle_icon()">
+                <span id="mac-top-bar-menu-time" class="mac-top-bar-menu">wait</span>
             </div>
 
         </div>
+        <iframe src="./setting.html" frameborder=0 class="mac-setting-iframe" id="control-iframe"></iframe>
         <div class="mac-bottom-bar">
             <div class="mac-bottom-bar-icon-div">
                 <img onclick="icon_event(1),appFullScreen()" src="asset/icon/macOS_Big_Sur.png" width="75" height="75">
@@ -57,15 +61,23 @@
             <div id="mac-bottom-bar-circle"></div>
         </div>
     </div>
-    <script type="text/javascript" src="bootd.js"></script>
+    <script type="text/javascript" src="boot.js"></script>
     <script type="text/javascript" src="time.js"></script>
     <script type="text/javascript" src="bottombar.js"></script>
     <script>
         function appFullScreen() {
             const documentElement = document.documentElement;
-
-출처: https://ordinary-code.tistory.com/79 [김평범's OrdinaryCode]
             documentElement.requestFullscreen();
+        }
+
+        var iframe = document.getElementById('control-iframe');
+        var toggle = false
+        var img = document.getElementById('control-icon');
+
+        function toggle_icon() {
+            toggle = !toggle
+            toggle ? iframe.style.visibility = 'visible' : iframe.style.visibility = 'hidden';
+            toggle ? img.classList.value = 'on' : img.classList.value = 'off';
         }
     </script>
 </body>

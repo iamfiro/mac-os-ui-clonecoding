@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgba(255, 255, 255, 0.286);
+            padding: 10px;
+        }
+        html {
+            background-color: rgba(255, 255, 255, 0);
+        }
+        .top {
+            display: flex;
+            justify-content: space-between
+        }
+
+        .wifi-bluetooth-airdrop-container {
+            background-color: rgba(255, 255, 255, 0.432);
+            width: 42%;
+            border-radius: 15px;
+            font-weight: 500;
+            padding: 20px;
+            height: 170px;
+        }
+
+        .wifi {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .wifi-title {
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bluetooth {
+            display: flex;
+            flex-direction: row;
+            align-items: center
+        }
+
+        .top-right {
+            width: 45%;
+        }
+
+        .do-Not-blabla {
+            background-color: rgba(255, 255, 255, 0.432);
+            border-radius: 15px;
+            padding: 20px;
+            display: flex;
+        }
+
+        .do-not-blabla-title {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        .top-right-bottom {
+            width: 100%;
+            display: flex;
+            justify-content: space-between
+        }
+
+        .brightnees {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.432);
+            border-radius: 15px;
+            padding: 15px 20px 25px 20px;
+            margin-top: 17px;
+            width: 29%;
+            height: 65px;
+        }
+
+        .airplay {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.432);
+            border-radius: 15px;
+            padding: 13px 20px 20px 20px;
+            margin-top: 17px;
+            width: 29%;
+            height: 65px;
+            padding-top: 20px;
+        }
+
+        .display {
+            background-color: rgba(255, 255, 255, 0.432);
+            border-radius: 15px;
+            padding: 10px 20px 20px 20px;
+            display: flex;
+            margin-top: 20px;
+            flex-direction: column;
+        }
+
+        .display>span {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .bar {
+            width: 100%;
+            height: 30px;
+            background-color: #3e4a632d;
+            border-radius: 25px;
+            margin-top: 10px;
+        }
+
+        .progress {
+            background-color: #fff;
+            height: 100%;
+            width: 70%;
+            border-radius: 25px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.136);
+        }
+
+        .progress-circle {
+            background-color: #fff;
+            position: relative;
+            left: 270px;
+            top: -30px;
+            width: 30px;
+            height: 30px;
+            border-radius: 25px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.232);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="wifi-bluetooth-airdrop-container">
+            <div class="wifi">
+                <img src="asset/mac setting/wifi.png" width="40" height="40" style="margin-right: 20px;">
+                <div class="wifi-title">
+                    <span>Wi-Fi</span>
+                    <span style="color: #0000006b;font-size: 17px;">Home</span>
+                </div>
+            </div>
+
+            <div class="bluetooth" style="margin-top: 15px;">
+                <img src="asset/mac setting/bluetooth.png" width="40" height="40" style="margin-right: 20px;">
+                <span style="font-size: 20px;">Bluetooth</span>
+            </div>
+
+            <div class="wifi" style="margin-top: 20px;">
+                <img src="asset/mac setting/airdrop.png" width="40" height="40" style="margin-right: 20px;">
+                <div class="wifi-title">
+                    <span>AirDrop</span>
+                    <span style="color: #0000006b;font-size: 17px;">Home</span>
+                </div>
+            </div>
+        </div>
+        <div class="top-right">
+            <div class="do-Not-blabla">
+                <img src="asset/mac setting/moon.png" width="40" height="40"
+                    style="background-color: #84aaca6a;border-radius: 50px;">
+                <div class="do-not-blabla-title">
+                    <span>Do Not</span>
+                    <span>Disturb</span>
+                </div>
+            </div>
+            <div class="top-right-bottom">
+                <div class="brightnees">
+                    <img style="" src="asset/mac setting/brightnees.png" width="40" height="40"
+                        style="margin-right: 20px;">
+                    <span style="text-align: center">Keyboard</span>
+                    <span>Brightnees</span>
+                </div>
+                <div class="airplay">
+                    <img style="" src="asset/mac setting/airplay.png" width="35" height="30"
+                        style="margin-right: 20px;">
+                    <span style="text-align: center">Airplay</span>
+                    <span>Display</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="display">
+        <span>Display</span>
+        <div class="bar">
+            <div class="progress">
+                <img src="asset/mac setting/sun.png" width="18" height="18"
+                    style="opacity: 0.3;position: relative;top: 6.5px;left: 10px">
+            </div>
+            <div class="progress-circle"></div>
+        </div>
+    </div>
+    <div class="display">
+        <span>Sound</span>
+        <div class="bar">
+            <div class="progress">
+                <img src="asset/mac setting/music.png" width="14" height="14"
+                    style="opacity: 0.3;position: relative;top: 6px;left: 10px">
+            </div>
+            <div class="progress-circle"></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+.mac-bottom-bar-icon-div > img:hover {
+    position: relative;
+    transform: translateY(-30px);
+    transition: .2s;
+}
+
+.mac-bottom-bar-icon-div > img {
+    position: relative;
+    transform: translateY(0px);
+    transition: .2s;
+}
