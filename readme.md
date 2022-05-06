@@ -7,3 +7,5 @@
 - make top bar
   
 - make bottom bar circle dot
+
+- add fullscreen button
