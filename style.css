@@ -34,7 +34,7 @@ body {
 .mac-home-view {
     width: 100vw;
     height: 100vh;
-    background-image: url('mac-os-background-image2.jpg');
+    background-image: url('asset/background/mac-os-background-image2.jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;
